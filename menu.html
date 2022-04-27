@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Darling's Cafe - Food and Drink Menu</title>
+<!-- 
+Cafe House Template
+http://www.templatemo.com/tm-466-cafe-house
+-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/templatemo-style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Preloader -->
+    <div class="tm-top-header">
+      <div class="container">
+        <div class="row">
+          <div class="tm-top-header-inner">
+            <div class="tm-logo-container">
+              <img src="img/logo.png" alt="Logo" class="tm-site-logo">
+              <h1 class="tm-site-name tm-handwriting-font">Darling's Cafe</h1>
+            </div>
+            <div class="mobile-menu-icon">
+              <i class="fa fa-bars"></i>
+            </div>
+            <nav class="tm-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today-special.html">Today Special</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>   
+          </div>           
+        </div>    
+      </div>
+    </div>
+    <section class="tm-welcome-section">
+      <div class="container tm-position-relative">
+        <div class="tm-lights-container">
+          <img src="img/light.png" alt="Light" class="light light-1">
+          <img src="img/light.png" alt="Light" class="light light-2">
+          <img src="img/light.png" alt="Light" class="light light-3">  
+        </div>        
+        <div class="row tm-welcome-content">
+          <h2 class="white-text tm-handwriting-font tm-welcome-header"><img src="img/header-line.png" alt="Line" class="tm-header-line">&nbsp;Our Menus&nbsp;&nbsp;<img src="img/header-line.png" alt="Line" class="tm-header-line"></h2>
+          <h2 class="gold-text tm-welcome-header-2">Darling's Cafe</h2>
+          <p class="gray-text tm-welcome-description"> We, at <span class="gold-text">Darling's Cafe</span> are thirsty for stories. Stories that smell of all things coffee. Stories that begin with a strong cup of coffee in the morning. Stories that lift your spirits up with a dose of cuppa to drive away your mid-week blues. </p>
+          <a href="#main" class="tm-more-button tm-more-button-welcome">Menu</a>      
+        </div>
+        <img src="img/table-set.png" alt="Table Set" class="tm-table-set img-responsive">  
+      </div>      
+    </section>
+    <div class="tm-main-section light-gray-bg">
+      <div class="container" id="main">
+        <section class="tm-section row">
+          <div class="col-lg-9 col-md-9 col-sm-8">
+            <h2 class="tm-section-header gold-text tm-handwriting-font">Variety of Menus</h2>
+            <h2>Darling's Cafe</h2>
+            <p class="tm-welcome-description">Some restaurants only make money at specific times of day, like brunch places that are busy in the morning and bars that are busy at night. Darling's Cafe has done just that, serving as an all-in-one coffee shop, brewery, and breakfast/lunch/dinner spot.</p>
+            <a href="#" class="tm-more-button margin-top-30">Read More</a> 
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 tm-welcome-img-container">
+            <div class="inline-block shadow-img">
+              <img src="img/1.jpg" alt="Image" class="img-circle img-thumbnail">  
+            </div>              
+          </div>            
+        </section>          
+        <section class="tm-section row">
+          <div class="col-lg-12 tm-section-header-container margin-bottom-30">
+            <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="img/logo.png" alt="Logo" class="tm-site-logo"> Our Menus</h2>
+            <div class="tm-hr-container"><hr class="tm-hr"></div>
+          </div>
+          <div>
+            <div class="col-lg-3 col-md-3">
+              <div class="tm-position-relative margin-bottom-30">              
+                <nav class="tm-side-menu">
+                  <ul>
+                    <li><a href="#tea-menu" id="tea" onclick="mytea()">Tea</a></li>
+                    <li><a href="#coffee-menu" id="coffee" onclick="mycoffee()">Coffee</a></li> 
+                    <li><a href="#breakfast-menu" id="breakfast" onclick="mybreakfast()">Breakfast</a></li>
+                    <li><a href="#brunch-menu" id="brunch" onclick="mybrunch()">Brunch</a></li>
+                    <li><a href="#lunch-menu" id="lunch" onclick="mylunch()">Lunch</a></li>
+                    <li><a href="#snack-menu" id="snack" onclick="mysnack()">Snacks</a></li>
+                    <li><a href="#dinner-menu" id="dinner" onclick="mydinner()">Dinner</a></li>
+                    <li><a href="#pizza-menu" id="pizza" onclick="mypizza()">Pizza</a></li>
+                    <li><a href="#dessert-menu" id="dessert" onclick="mydessert()">Dessert</a></li>
+                    <li><a href="#thali-menu" id="thali" onclick="mythali()">Thali</a></li>
+                  </ul>              
+                </nav>    
+                <img src="img/vertical-menu-bg.png" alt="Menu bg" class="tm-side-menu-bg">
+              </div>  
+            </div>         
+            <!-- menu content -->
+            <!---tea menu content-->   
+            <div class="tm-menu-product-content col-lg-9 col-md-9" id="tea-menu"> 
+              <div class="tm-product">
+                <img src="img/black-tea.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Black Tea</h3>
+                  <p class="tm-product-description">Black tea, or red tea in China, is one of the most popular tea flavors and is fully oxidized. The leaves of the Camellia sinensis plant are withered, rolled, oxidized / fermented, and dried or fired to produce a strong, full-bodied flavor. Assam, Darjeeling, Nilgiri, and Sri Lanka are a few well-known black tea producing regions, and the flavor will vary based on the region and type of black tea.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>50</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/green-tea.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Green Tea</h3>
+                  <p class="tm-product-description">Green tea is the most popular tea globally, is unoxidized, and has less caffeine than black tea. Camellia sinensis leaves are picked, dried, and heat-treated to prevent oxidation. Chinese people often pan-fire leaves, which creates a duller green color, while Japanese people will typically steam them and achieve a brighter green shade.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>50</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/white-tea.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">White Tea</h3>
+                  <p class="tm-product-description">Made from the leaves of the Camellia sinensis plant in only the Fujian province, white tea varieties are the least processed of all teas. The leaves are simply left to wither and dry on their own, which gives them a very delicate, naturally sweet, and well-rounded flavor. It has very little caffeine.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>40</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/herbal-tea.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Herbal Tea</h3>
+                  <p class="tm-product-description">Herbal tea doesn't come from tea leaves like other varieties. It's made from dried herbs, fruits, and flowers, which can create a wide range of delicate flavors. These tea types are caffeine free, making them ideal for customers with dietary restrictions. Common ingredients for herbal infusions include chamomile, ginger, lemongrass, peppermint, rosehips, hibiscus, and dried fruits.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>60</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/rooibos-tea.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Rooibos Tea</h3>
+                  <p class="tm-product-description">Rooibos tea, or African Red Tea, is an herbal tea that comes from the South African Red Bush, and the leaves are ground and bruised before they're fermented and dried. Green rooibos tea doesn't go through an oxidation / fermentation process and has a lighter flavor.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>65</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/oolong-tea.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Oolong Tea</h3>
+                  <p class="tm-product-description">Oolong, or wulong, tea is semi-oxidized and picked later in the season than green tea. The leaves come from the Camellia sinensis plant but are bruised by being tossed or shaken in baskets, which changes the oxidation process. They're heat-treated to stop the oxidation, which can vary based on region and create different flavors.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>45</a>
+                </div>
+              </div>
+            </div>
+            <!------coffee menu content-->
+            <div class="tm-menu-product-content col-lg-9 col-md-9" id="coffee-menu"> 
+              <div class="tm-product">
+                <img src="img/Espresso-coffee.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Espresso</h3>
+                  <p class="tm-product-description">Most people know that a shot of espresso is stronger than the same amount of coffee,but when beans are used to make espresso they're more finely ground, and they're brewed with a higher grounds-to-water ratio than what's used for coffee.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>80</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/latte-coffee.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Latte</h3>
+                  <p class="tm-product-description">This classic drink is typically 1/3 espresso and 2/3 steamed milk, topped with a thin layer of foam, but Darling's Cafe have come up with seemingly endless customizations. You can experiment with flavored syrups like vanilla and pumpkin spice or create a nondairy version by using oat milk. Skilled baristas often swirl the foam into latte art!</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>100</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/cappuccino-coffee.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Cappuccino</h3>
+                  <p class="tm-product-description">This espresso-based drink is similar to a latte, but the frothy top layer is thicker. The standard ratio is equal parts espresso, steamed milk, and foam. It's often served in a 6-ounce cup (smaller than a latte cup) and can be topped with a sprinkling of cinnamon.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>90</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/cold-brew-coffee.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Cold Brew</h3>
+                  <p class="tm-product-description">Cold brew is one of the biggest coffee trends of the last decade, and for good reason: It's made by slowly steeping coffee grounds over cool or room-temperature water, so it tastes smoother and less bitter than regular iced coffee, which is brewed hot.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>105</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/frappe-coffee.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Frappe</h3>
+                  <p class="tm-product-description">This word can be used to describe a variety of coffee and espresso drinks that have been blended with ice. The slushy-like drinks often contain some kind of milk and a flavored syrup, plus a top layer of whipped cream.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>125</a>
+                </div>
+              </div>
+              <div class="tm-product">
+                <img src="img/irish-coffee.jpg" alt="Product" height="200px" width="150px">
+                <div class="tm-product-text">
+                  <h3 class="tm-product-title">Irish Coffee</h3>
+                  <p class="tm-product-description">Irish coffee (Irish: caife Gaelach) is the drink for coffee lover who likes to take it to the edge. It is a drink that not only contains hot coffee, but also consists of sugar, whipped cream, and whiskey. For the coffee lover, it is the ultimate in coffee pleasure.</p>
+                </div>
+                <div class="tm-product-price">
+                  <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>200</a>
+                </div>
+              </div>
+            </div>
+			<!------------BreakFast Menu------>
+			<div class="tm-menu-product-content col-lg-9 col-md-9" id="breakfast-menu"> 
+				<div class="tm-product">
+				  <img src="img/Espresso-coffee.jpg" alt="Product" height="200px" width="150px">
+				  <div class="tm-product-text">
+					<h3 class="tm-product-title">Espresso</h3>
+					<p class="tm-product-description">Most people know that a shot of espresso is stronger than the same amount of coffee,but when beans are used to make espresso they're more finely ground, and they're brewed with a higher grounds-to-water ratio than what's used for coffee.</p>
+				  </div>
+				  <div class="tm-product-price">
+					<a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>30</a>
+				  </div>
+				</div>
+				<div class="tm-product">
+				  <img src="img/latte-coffee.jpg" alt="Product" height="200px" width="150px">
+				  <div class="tm-product-text">
+					<h3 class="tm-product-title">Latte</h3>
+					<p class="tm-product-description">This classic drink is typically 1/3 espresso and 2/3 steamed milk, topped with a thin layer of foam, but Darling's Cafe have come up with seemingly endless customizations. You can experiment with flavored syrups like vanilla and pumpkin spice or create a nondairy version by using oat milk. Skilled baristas often swirl the foam into latte art!</p>
+				  </div>
+				  <div class="tm-product-price">
+					<a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>20</a>
+				  </div>
+				</div>
+				<div class="tm-product">
+				  <img src="img/cappuccino-coffee.jpg" alt="Product" height="200px" width="150px">
+				  <div class="tm-product-text">
+					<h3 class="tm-product-title">Cappuccino</h3>
+					<p class="tm-product-description">This espresso-based drink is similar to a latte, but the frothy top layer is thicker. The standard ratio is equal parts espresso, steamed milk, and foam. It's often served in a 6-ounce cup (smaller than a latte cup) and can be topped with a sprinkling of cinnamon.</p>
+				  </div>
+				  <div class="tm-product-price">
+					<a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>15</a>
+				  </div>
+				</div>
+				<div class="tm-product">
+				  <img src="img/cold-brew-coffee.jpg" alt="Product" height="200px" width="150px">
+				  <div class="tm-product-text">
+					<h3 class="tm-product-title">Cold Brew</h3>
+					<p class="tm-product-description">Cold brew is one of the biggest coffee trends of the last decade, and for good reason: It's made by slowly steeping coffee grounds over cool or room-temperature water, so it tastes smoother and less bitter than regular iced coffee, which is brewed hot.</p>
+				  </div>
+				  <div class="tm-product-price">
+					<a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>25</a>
+				  </div>
+				</div>
+				<div class="tm-product">
+				  <img src="img/frappe-coffee.jpg" alt="Product" height="200px" width="150px">
+				  <div class="tm-product-text">
+					<h3 class="tm-product-title">Frappe</h3>
+					<p class="tm-product-description">This word can be used to describe a variety of coffee and espresso drinks that have been blended with ice. The slushy-like drinks often contain some kind of milk and a flavored syrup, plus a top layer of whipped cream.</p>
+				  </div>
+				  <div class="tm-product-price">
+					<a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>25</a>
+				  </div>
+				</div>
+				<div class="tm-product">
+				  <img src="img/irish-coffee.jpg" alt="Product" height="200px" width="150px">
+				  <div class="tm-product-text">
+					<h3 class="tm-product-title">Irish Coffee</h3>
+					<p class="tm-product-description">Irish coffee (Irish: caife Gaelach) is the drink for coffee lover who likes to take it to the edge. It is a drink that not only contains hot coffee, but also consists of sugar, whipped cream, and whiskey. For the coffee lover, it is the ultimate in coffee pleasure.</p>
+				  </div>
+				  <div class="tm-product-price">
+					<a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">&#8377</span>45</a>
+				  </div>
+				</div>
+			  </div>
+            <!------------>
+          </div>          
+        </section>
+      </div>
+    </div> 
+    <!---------------------Footer starts--------------->
+    <footer>
+      <div class="tm-black-bg">
+        <div class="container">
+          <div class="row margin-bottom-60">
+            <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
+              <h3 class="tm-footer-div-title">Main Menu</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today-special.html">Today Special</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </nav>
+            <div class="col-lg-5 col-md-5 tm-footer-div">
+              <h3 class="tm-footer-div-title">About Us</h3>
+              <p class="margin-top-15"> <span class="gold-text">Darling's Cafe</span> first started its operations in October 2021. <span class="gold-text">Darling's Cafe</span> has come about to bring ‘A Lifestyle that encourages quality coffee drinking, a unique environment with an excellent service’.</p>
+              <p class="margin-top-15"> <span class="gold-text">Darling's Cafe</span> as a business is in the sphere of retailing where ‘Retailing an Experience’ is what it constantly and consistently endeavours to do. At <span class="gold-text">Darling's Cafe</span> employees and service, beverages & food, ambience & display contributes to the ‘Overall experience’.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 tm-footer-div">
+              <h3 class="tm-footer-div-title">Get Social</h3>
+              <p>Plesae Do follow us on.</p>
+              <div class="tm-social-icons-container">
+                <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+                <a href="#" class="tm-social-icon"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>          
+        </div>  
+      </div>      
+      <div>
+        <div class="container">
+          <div class="row tm-copyright">
+           <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2022 Darling's Cafe</p>
+         </div>  
+       </div>
+     </div>
+   </footer> <!-- Footer End-->  
+   <!-- JS -->
+   <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
+   <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+   <script>
+	   	
+		function mytea() {
+			document.getElementById("tea-menu").style.display = "block";
+			document.getElementById("coffee-menu").style.display = "none";
+			document.getElementById("breakfast-menu").style.display = "none";
+			document.getElementById("brunch-menu").style.display = "none";
+			document.getElementById("lunch-menu").style.display = "none";
+			document.getElementById("snack-menu").style.display = "none";
+			document.getElementById("dinner-menu").style.display = "none";
+			document.getElementById("pizza-menu").style.display = "none";
+			document.getElementById("dessert-menu").style.display = "none";
+			document.getElementById("thali-menu").style.display = "none";
+
+		}
+
+		function mycoffee() {
+			document.getElementById("tea-menu").style.display = "none";
+			document.getElementById("coffee-menu").style.display = "block";
+			document.getElementById("breakfast-menu").style.display = "none";
+			document.getElementById("brunch-menu").style.display = "none";
+			document.getElementById("lunch-menu").style.display = "none";
+			document.getElementById("snack-menu").style.display = "none";
+			document.getElementById("dinner-menu").style.display = "none";
+			document.getElementById("pizza-menu").style.display = "none";
+			document.getElementById("dessert-menu").style.display = "none";
+			document.getElementById("thali-menu").style.display = "none";
+
+		}
+
+		function mybreakfast() {
+			document.getElementById("tea-menu").style.display = "none";
+			document.getElementById("coffee-menu").style.display = "none";
+			document.getElementById("breakfast-menu").style.display = "block";
+			document.getElementById("brunch-menu").style.display = "none";
+			document.getElementById("lunch-menu").style.display = "none";
+			document.getElementById("snack-menu").style.display = "none";
+			document.getElementById("dinner-menu").style.display = "none";
+			document.getElementById("pizza-menu").style.display = "none";
+			document.getElementById("dessert-menu").style.display = "none";
+			document.getElementById("thali-menu").style.display = "none";
+
+		}
+
+		function mybrunch() {
+			document.getElementById("tea-menu").style.display = "none";
+			document.getElementById("coffee-menu").style.display = "none";
+			document.getElementById("breakfast-menu").style.display = "none";
+			document.getElementById("brunch-menu").style.display = "block";
+			document.getElementById("lunch-menu").style.display = "none";
+			document.getElementById("snack-menu").style.display = "none";
+			document.getElementById("dinner-menu").style.display = "none";
+			document.getElementById("pizza-menu").style.display = "none";
+			document.getElementById("dessert-menu").style.display = "none";
+			document.getElementById("thali-menu").style.display = "none";
+
+		}
+
+		function mylunch() {
+			document.getElementById("tea-menu").style.display = "none";
+			document.getElementById("coffee-menu").style.display = "none";
+			document.getElementById("breakfast-menu").style.display = "none";
+			document.getElementById("brunch-menu").style.display = "none";
+			document.getElementById("lunch-menu").style.display = "block";
+			document.getElementById("snack-menu").style.display = "none";
+			document.getElementById("dinner-menu").style.display = "none";
+			document.getElementById("pizza-menu").style.display = "none";
+			document.getElementById("dessert-menu").style.display = "none";
+			document.getElementById("thali-menu").style.display = "none";
+
+		}
+
+		function mysnack() {
+			document.getElementById("tea-menu").style.display = "none";
+			document.getElementById("coffee-menu").style.display = "none";
+			document.getElementById("breakfast-menu").style.display = "none";
+			document.getElementById("brunch-menu").style.display = "none";
+			document.getElementById("lunch-menu").style.display = "none";
+			document.getElementById("snack-menu").style.display = "block";
+			document.getElementById("dinner-menu").style.display = "none";
+			document.getElementById("pizza-menu").style.display = "none";
+			document.getElementById("dessert-menu").style.display = "none";
+			document.getElementById("thali-menu").style.display = "none";
+
+		}
+
+		function mydinner() {
+			document.getElementById("tea-menu").style.display = "none";
+			document.getElementById("coffee-menu").style.display = "none";
+			document.getElementById("breakfast-menu").style.display = "none";
+			document.getElementById("brunch-menu").style.display = "none";
+			document.getElementById("lunch-menu").style.display = "none";
+			document.getElementById("snack-menu").style.display = "none";
+			document.getElementById("dinner-menu").style.display = "block";
+			document.getElementById("pizza-menu").style.display = "none";
+			document.getElementById("dessert-menu").style.display = "none";
+			document.getElementById("thali-menu").style.display = "none";
+
+		}
+
+		function mypizza() {
+			document.getElementById("tea-menu").style.display = "none";
+			document.getElementById("coffee-menu").style.display = "none";
+			document.getElementById("breakfast-menu").style.display = "none";
+			document.getElementById("brunch-menu").style.display = "none";
+			document.getElementById("lunch-menu").style.display = "none";
+			document.getElementById("snack-menu").style.display = "none";
+			document.getElementById("dinner-menu").style.display = "none";
+			document.getElementById("pizza-menu").style.display = "block";
+			document.getElementById("dessert-menu").style.display = "none";
+			document.getElementById("thali-menu").style.display = "none";
+
+		}
+
+		function mydessert() {
+			document.getElementById("tea-menu").style.display = "none";
+			document.getElementById("coffee-menu").style.display = "none";
+			document.getElementById("breakfast-menu").style.display = "none";
+			document.getElementById("brunch-menu").style.display = "none";
+			document.getElementById("lunch-menu").style.display = "none";
+			document.getElementById("snack-menu").style.display = "none";
+			document.getElementById("dinner-menu").style.display = "none";
+			document.getElementById("pizza-menu").style.display = "none";
+			document.getElementById("dessert-menu").style.display = "block";
+			document.getElementById("thali-menu").style.display = "none";
+
+		}
+
+		function mythali() {
+			document.getElementById("tea-menu").style.display = "none";
+			document.getElementById("coffee-menu").style.display = "none";
+			document.getElementById("breakfast-menu").style.display = "none";
+			document.getElementById("brunch-menu").style.display = "none";
+			document.getElementById("lunch-menu").style.display = "none";
+			document.getElementById("snack-menu").style.display = "none";
+			document.getElementById("dinner-menu").style.display = "none";
+			document.getElementById("pizza-menu").style.display = "none";
+			document.getElementById("dessert-menu").style.display = "none";
+			document.getElementById("thali-menu").style.display = "block";
+
+		}
+
+   </script>
+ </body>
+ </html>
